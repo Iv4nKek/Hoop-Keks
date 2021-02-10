@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ebbed2e6-8421-4910-a8ac-65e9884663d7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29AD182F-AA3F-478C-9310-D6A2E7143C15/a2/e3cd6f40/Texture.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Core/Inputs/PlayerInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Core/Primitives.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Inputs/BotInput.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Inputs/Input.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/LevelState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Ball.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Eco/Skin.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Eco/SkinShop/Shop.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/PlayerResources.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Tournament/Tournament.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/GameState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/GameStateHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Eco/SkinContainer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Primitives.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/TorusPhysics.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Inputs/JumpInput.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Thorus.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Inputs/PlayerInput.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Torus.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseContainer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseUI.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="1oICPZfTZ5wd0MJsVQWDL2WSebG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Code.Core.Effects.PhraseHandler.Main" type="DotNetStaticMethod" factoryName=".NET Static Method" temporary="true">
+      <option name="EXE_PATH" value="C:\Program Files\JetBrains\JetBrains Rider 2020.3\lib\ReSharperHost\JetLauncherILc.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Assembly-CSharp.csproj" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.7.1" />
+      <option name="CLASS_NAME" value="Code.Core.Effects.PhraseHandler" />
+      <option name="METHOD_NAME" value="Main" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue=".NET Static Method.Code.Core.Effects.PhraseHandler.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ebbed2e6-8421-4910-a8ac-65e9884663d7" name="Default Changelist" comment="" />
+      <created>1612964698279</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612964698279</updated>
+      <workItem from="1612964702285" duration="16226000" />
+    </task>
+    <servers />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

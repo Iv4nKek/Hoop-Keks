@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Projects\Hoop Keks" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Code" t="Include">
+          <e p="Core" t="Include">
+            <e p="Ball.cs" t="Include" />
+            <e p="Effects" t="Include">
+              <e p="PhraseContainer.cs" t="Include" />
+              <e p="PhraseHandler.cs" t="Include" />
+              <e p="PhraseUI.cs" t="Include" />
+            </e>
+            <e p="GameState.cs" t="Include" />
+            <e p="GameStateHandler.cs" t="Include" />
+            <e p="Inputs" t="Include">
+              <e p="BotInput.cs" t="Include" />
+              <e p="JumpInput.cs" t="Include" />
+              <e p="PlayerInput.cs" t="Include" />
+            </e>
+            <e p="LevelState.cs" t="Include" />
+            <e p="PlayerResources.cs" t="Include" />
+            <e p="Primitives.cs" t="Include" />
+            <e p="Torus.cs" t="Include" />
+            <e p="TorusPhysics.cs" t="Include" />
+            <e p="Tournament" t="Include">
+              <e p="Tournament.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Eco" t="Include">
+            <e p="Skin.cs" t="Include" />
+            <e p="SkinContainer.cs" t="Include" />
+            <e p="SkinShop" t="Include">
+              <e p="Shop.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Hoop Keks.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\ivank\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\ivank\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Hoop Keks.-1151649265.00" t="ExcludeRecursive" />
+  </component>
+</project>
