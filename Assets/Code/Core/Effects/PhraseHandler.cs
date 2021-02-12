@@ -6,19 +6,20 @@ namespace Code.Core.Effects
 {
     public class PhraseHandler: MonoBehaviour
     {
-        private List<string> _phrases;
+        [SerializeField] private PhraseContainer _phraseContainer;
+        private List<string> _phrases = new List<string>();
         private static int currentPhrase = 0;
-        private void Start()
+        private void Awake()
         {
             LoadPhrases();
         }
 
         private void LoadPhrases()
         {
-            PhraseContainer container = Resources.Load<PhraseContainer>("Resources/Phrases/PhraseContainer");
-            if (container != null)
+            //PhraseContainer container = Resources.Load<PhraseContainer>("Assets/Resources/PhraseContainer");
+            if (_phraseContainer != null)
             {
-                _phrases = container.Phrases;
+                _phrases = _phraseContainer.Phrases;
             }
         }
 

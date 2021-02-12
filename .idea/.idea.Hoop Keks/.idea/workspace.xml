@@ -1,11 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebbed2e6-8421-4910-a8ac-65e9884663d7" name="Default Changelist" comment="" />
+    <list default="true" id="ebbed2e6-8421-4910-a8ac-65e9884663d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Belongs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Belongs.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/DebugKek.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/DebugKek.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Effects/CameraShaking.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Effects/CameraShaking.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/States.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/States/LevelStateHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Torus.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Torus/AreaHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Torus/AreaHandler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Torus/GoalHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Torus/GoalHandler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Torus/Torus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/PointsUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/PointsUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/ScoreUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/ScoreUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/TimeUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/TimeUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/States/GameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/GameState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/States/GameState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/GameStateHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/States/GameStateHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/GameStateHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/States/GameStateHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/LevelState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/LevelState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/States/LevelStateHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Torus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Torus.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Torus/Torus.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/TorusPhysics.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/TorusPhysics.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Materials/Ball.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/Materials/Ball.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Materials/Torus.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/Materials/Torus.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Physics Material 2D.physicsMaterial2D" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Physics Material 2D.physicsMaterial2D" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29AD182F-AA3F-478C-9310-D6A2E7143C15/a2/e3cd6f40/Texture.cs" root0="SKIP_HIGHLIGHTING" />
@@ -16,13 +64,11 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Code/Core/Inputs/BotInput.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Inputs/Input.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/LevelState.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Ball.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Eco/Skin.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Eco/SkinShop/Shop.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/PlayerResources.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Tournament/Tournament.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/GameState.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/GameStateHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Eco/SkinContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Primitives.cs" />
@@ -30,13 +76,29 @@
       <option value="$PROJECT_DIR$/Assets/Code/Core/Inputs/JumpInput.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Thorus.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Inputs/PlayerInput.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/GameState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/LevelState.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Torus.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/GoalHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Torus/GoalHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Torus/AreaHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Torus/Torus.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/DebugKek.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/CameraShaking.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/UI/ScoreUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/LevelStateHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/UI/PointsUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/States/LevelStateHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/UI/TimeUI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oICPZfTZ5wd0MJsVQWDL2WSebG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -96,12 +158,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612964698279</updated>
-      <workItem from="1612964702285" duration="16226000" />
+      <workItem from="1612964702285" duration="16844000" />
+      <workItem from="1613052358134" duration="1536000" />
+      <workItem from="1613055300558" duration="23823000" />
     </task>
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

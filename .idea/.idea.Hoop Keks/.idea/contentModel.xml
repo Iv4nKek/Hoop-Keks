@@ -2,30 +2,44 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Projects\Hoop Keks" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Code" t="Include">
           <e p="Core" t="Include">
             <e p="Ball.cs" t="Include" />
+            <e p="Belongs.cs" t="Include" />
+            <e p="DebugKek.cs" t="Include" />
             <e p="Effects" t="Include">
+              <e p="CameraShaking.cs" t="Include" />
               <e p="PhraseContainer.cs" t="Include" />
               <e p="PhraseHandler.cs" t="Include" />
               <e p="PhraseUI.cs" t="Include" />
             </e>
-            <e p="GameState.cs" t="Include" />
-            <e p="GameStateHandler.cs" t="Include" />
             <e p="Inputs" t="Include">
               <e p="BotInput.cs" t="Include" />
               <e p="JumpInput.cs" t="Include" />
               <e p="PlayerInput.cs" t="Include" />
             </e>
-            <e p="LevelState.cs" t="Include" />
             <e p="PlayerResources.cs" t="Include" />
             <e p="Primitives.cs" t="Include" />
-            <e p="Torus.cs" t="Include" />
-            <e p="TorusPhysics.cs" t="Include" />
+            <e p="States" t="Include">
+              <e p="GameState.cs" t="Include" />
+              <e p="GameStateHandler.cs" t="Include" />
+              <e p="LevelStateHandler.cs" t="Include" />
+            </e>
+            <e p="Torus" t="Include">
+              <e p="AreaHandler.cs" t="Include" />
+              <e p="GoalHandler.cs" t="Include" />
+              <e p="Torus.cs" t="Include" />
+            </e>
             <e p="Tournament" t="Include">
               <e p="Tournament.cs" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="PointsUI.cs" t="Include" />
+              <e p="ScoreUI.cs" t="Include" />
+              <e p="TimeUI.cs" t="Include" />
             </e>
           </e>
           <e p="Eco" t="Include">
@@ -34,6 +48,71 @@
             <e p="SkinShop" t="Include">
               <e p="Shop.cs" t="Include" />
             </e>
+          </e>
+        </e>
+        <e p="Demigiant" t="Include">
+          <e p="DemiLib" t="Include">
+            <e p="Core" t="Include">
+              <e p="DemiLib.xml" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="DemiEditor.xml" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="DOTween" t="Include">
+            <e p="Modules" t="Include">
+              <e p="DOTweenModuleAudio.cs" t="Include" />
+              <e p="DOTweenModulePhysics.cs" t="Include" />
+              <e p="DOTweenModulePhysics2D.cs" t="Include" />
+              <e p="DOTweenModuleSprite.cs" t="Include" />
+              <e p="DOTweenModuleUI.cs" t="Include" />
+              <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+              <e p="DOTweenModuleUtils.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+          <e p="DOTweenPro" t="Include">
+            <e p="DOTweenAnimation.cs" t="Include" />
+            <e p="DOTweenProShortcuts.cs" t="Include" />
+            <e p="DOTweenTextMeshPro.cs" t="Include" />
+            <e p="DOTweenTk2d.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="DOTweenAnimationInspector.cs" t="Include" />
+              <e p="DOTweenPreviewManager.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+          <e p="readme_DOTweenPro.txt" t="Include" />
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
       </e>
