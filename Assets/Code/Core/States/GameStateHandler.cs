@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Net.Http.Headers;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
@@ -9,11 +10,24 @@ namespace Code.Core
     {
         [SerializeField]private GameState _gameState;
 
+        private static GameStateHandler _gameStateHandler;
         public GameState State => _gameState;
+
+        public static GameStateHandler StateHandler => _gameStateHandler;
+
+        private void Awake()
+        {
+            if (_gameStateHandler == null)
+            {
+                _gameStateHandler = this;
+            }
+        }
+        
 
         private void Start()
         {
             LoadGameState();
+            
         }
 
         private void OnDestroy()

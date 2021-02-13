@@ -6,22 +6,42 @@ namespace Code.Core
 {
     public class Torus : MonoBehaviour
     {
-        [SerializeField] private Belongs belongs;
-        [SerializeField] private float jumpForce;
+        [SerializeField] private Belongs _belongs;
+        [SerializeField] private float _jumpForce;
+        [SerializeField] private Vector2 _jumpVector;
         
         [SerializeField] private JumpInput _jumpInput;
         [SerializeField] private Rigidbody2D _rigidbody2D;
-        [SerializeField] private PolygonCollider2D _torusCollider;
         [SerializeField] private CircleCollider2D _ballCollider;
         [SerializeField] private CircleCollider2D _ballGoalCollider;
-        [SerializeField] private BoxCollider2D _torusGoalCollider2D;
+
         
         private bool _goalLocked;
+        private bool _controlLocked;
+        
 
-        private void Awake()
+        private void Start()
         {
-            Physics2D.IgnoreCollision(_ballCollider, GetComponent<PolygonCollider2D>());
-            Physics2D.IgnoreCollision(_ballGoalCollider, GetComponent<PolygonCollider2D>());
+            UpdateBallColliders();
+            LevelStateHandler.LevelState.OnBeforeEndMatch += LockControl;
+            LevelStateHandler.LevelState.OnStart += UnlockControl;
+            LevelStateHandler.LevelState.OnStart += UpdateBallColliders;
+        }
+
+        private void LockControl(Belongs belongs)
+        {
+            _controlLocked = true;
+        }
+
+        private void UnlockControl()
+        {
+            _controlLocked = false;
+        }
+        public void UpdateBallColliders()
+        {
+            Ball ball = LevelStateHandler.LevelState.Ball;
+            Physics2D.IgnoreCollision(ball.AreaCollider, GetComponent<PolygonCollider2D>());
+            Physics2D.IgnoreCollision(ball.GoalCollider, GetComponent<PolygonCollider2D>());
         }
 
         private void OnEnable()
@@ -40,12 +60,15 @@ namespace Code.Core
             if (!_goalLocked)
             {
                 _goalLocked = true;
-                LevelStateHandler.LevelState.AddPoint(belongs);
+                LevelStateHandler.LevelState.AddPoint(_belongs);
             }
         }
         public void JumpRight()
         {
-            Vector2 force = new Vector2(1f,1f)*jumpForce;
+            if(_controlLocked)
+                return;
+            
+            Vector2 force = _jumpVector*_jumpForce;
             force = new Vector2(force.x, force.y + 10);
             _rigidbody2D.velocity = new Vector2();
             _rigidbody2D.AddForce(force);
@@ -53,8 +76,11 @@ namespace Code.Core
 
         public void JumpLeft()
         {
+            if(_controlLocked)
+                return;
+            
             _rigidbody2D.velocity = new Vector2();
-            _rigidbody2D.AddForce(new Vector2(-1f,1f)*jumpForce);
+            _rigidbody2D.AddForce(new Vector2(-_jumpVector.x,_jumpVector.y)*_jumpForce);
         }
 
         private void OnDisable()

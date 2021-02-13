@@ -12,12 +12,9 @@ namespace Code.Core.UI
         [SerializeField] private Color _defaulColor;
         [SerializeField] private Color _goalColor;
         
-        
         [SerializeField] private TMP_Text _playerScore;
         [SerializeField] private TMP_Text _botScore;
-
-       
-      
+        
 
         private LevelStateHandler _levelStateHandler;
         private Tween _tween;
@@ -26,7 +23,7 @@ namespace Code.Core.UI
         {
             _levelStateHandler = LevelStateHandler.LevelState;
             _levelStateHandler.OnGoal += HandleGoal;
-
+            _levelStateHandler.OnReset += UpdateText;
             _playerScore.color = _defaulColor;
             _botScore.color = _defaulColor;
 
@@ -41,18 +38,22 @@ namespace Code.Core.UI
             _tween.SetAutoKill(false);
             _tween.Pause();
         }
-
         private void HandleGoal(Belongs belongs)
         {
+            UpdateText();
             if(belongs == Belongs.Player)
                 UpdateScore(_playerScore,_levelStateHandler.PlayerScore);
             else
                 UpdateScore(_botScore,_levelStateHandler.BotScore);
         }
 
+        private void UpdateText()
+        {
+            _playerScore.text = _levelStateHandler.PlayerScore.ToString();
+            _botScore.text = _levelStateHandler.BotScore.ToString();
+        }
         private void UpdateScore(TMP_Text text, int score)
         {
-            text.text = score.ToString();
             TweenColor(text);
             TweenScale(text.rectTransform);
 

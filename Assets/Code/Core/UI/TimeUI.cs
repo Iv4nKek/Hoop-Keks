@@ -12,16 +12,33 @@ namespace Code.Core.UI
         private int rowTime;
         private void Start()
         {
-            rowTime = LevelStateHandler.LevelState.LevelTime;
-            StartCoroutine(HandleTime());
+            ResetTime();
+           
+            LevelStateHandler.LevelState.OnReset += ResetTime;
+            LevelStateHandler.LevelState.OnReset += StopTime;
+            LevelStateHandler.LevelState.OnStart += StartTime;
         }
 
+        private void ResetTime()
+        {
+            rowTime = LevelStateHandler.LevelState.LevelTime;
+        }
+        private void StopTime()
+        {
+            rowTime = LevelStateHandler.LevelState.LevelTime;
+            StopCoroutine(HandleTime());
+        }
+
+        private void StartTime()
+        {
+            StartCoroutine(HandleTime());
+        }
         private void UpdateTimeText()
         {
-            int _seconds = rowTime % 60;
-            int _minutes = rowTime / 60;
-            string secondText = _seconds < 10 ? $"0{_seconds}" : _seconds.ToString();
-            _timeText.text = $"{_minutes}:{secondText}";
+            int seconds = rowTime % 60;
+            int minutes = rowTime / 60;
+            string secondText = seconds < 10 ? "0"+seconds : seconds.ToString();
+            _timeText.text = $"{minutes}:{secondText}";
         }
 
         

@@ -23,6 +23,7 @@ namespace Code.Core.UI
 
         private int _pointsCount;
         private LevelStateHandler _levelState;
+        private bool isCreated;
 
         private void OnEnable()
         {
@@ -38,10 +39,13 @@ namespace Code.Core.UI
         private void Start()
         {
             _levelState = LevelStateHandler.LevelState;
-            _levelState.OnGoal += HandleGoal;
-            _pointsCount = LevelStateHandler.LevelState.WinScore; 
+            _pointsCount = _levelState.WinScore; 
             CreatePoints(_playerPointsTransform,_playerPoints);
             CreatePoints(_botPointsTransform,_botPoints);
+           
+            _levelState.OnGoal += HandleGoal;
+            _levelState.OnStart += ResetPoints;
+           
         }
 
         private void HandleGoal(Belongs belongs)
@@ -65,8 +69,23 @@ namespace Code.Core.UI
                 }
             }
         }
+
+        private void ResetPoints()
+        {
+            for (int i = 0; i < _pointsCount; i++)
+            {
+                Image image = _botPoints[i];
+                image.color = _defaulColor;
+            }
+            for (int i = 0; i < _pointsCount; i++)
+            {
+                Image image = _playerPoints[i];
+                image.color = _defaulColor;
+            }
+        }
         private void CreatePoints(Transform transform,List<Image> pointsList)
         {
+            
             for (int i = 0; i < _pointsCount; i++)
             {
                 GameObject go = Instantiate(_point,transform);

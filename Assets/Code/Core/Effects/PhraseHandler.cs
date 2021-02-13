@@ -16,7 +16,6 @@ namespace Code.Core.Effects
 
         private void LoadPhrases()
         {
-            //PhraseContainer container = Resources.Load<PhraseContainer>("Assets/Resources/PhraseContainer");
             if (_phraseContainer != null)
             {
                 _phrases = _phraseContainer.Phrases;
@@ -26,7 +25,7 @@ namespace Code.Core.Effects
         public string GetPhrase()
         {
             if (_phrases.Count == 0)
-                return "kekw";
+                return "PEPEGA";
             if (currentPhrase < _phrases.Count)
             {
                 if (++currentPhrase == _phrases.Count)

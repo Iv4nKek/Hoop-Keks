@@ -8,7 +8,12 @@ namespace Code.Core
         [SerializeField] private Torus _torus;
         [SerializeField] private BoxCollider2D _torusAreaCollider;
         [SerializeField] private CircleCollider2D _ballAreaCollider;
-        
+
+        private void Start()
+        {
+            _ballAreaCollider=  LevelStateHandler.LevelState.Ball.AreaCollider;
+        }
+
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other == _ballAreaCollider)

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
@@ -10,6 +11,7 @@ namespace Code.Core.Effects
 {
     public class PhraseUI : MonoBehaviour
     {
+       
         [SerializeField] private List<Color> _textColors;
         [SerializeField] private TMP_Text _text;
         [SerializeField] private DOTweenAnimation _animation;
@@ -24,8 +26,16 @@ namespace Code.Core.Effects
         private void Start()
         {
            LevelStateHandler.LevelState.OnGoal+=OnGoal;
+           LevelStateHandler.LevelState.OnReset+=DisableText;
         }
 
+       
+
+        private void DisableText()
+        {
+            _text.text = "";
+        }
+        
         private void OnGoal(Belongs belongs)
         {
             if (belongs == Belongs.Player)
@@ -33,10 +43,11 @@ namespace Code.Core.Effects
                 ShowPhrase();
             }
         }
-        
-        public void ShowPhrase()
+
+       
+
+        private void ShowPhrase()
         {
-            Debug.Log("1");
             if (isLeftSide)
             {
                 _text.transform.position = _leftTransform.position;
@@ -53,7 +64,6 @@ namespace Code.Core.Effects
             _text.text = _phraseHandler.GetPhrase();
             _text.color = _textColors[Random.Range(0, _textColors.Count)];
             _animation.DORestart();
-            Debug.Log("2");
         }
     }
 }

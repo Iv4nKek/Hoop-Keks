@@ -9,6 +9,11 @@ namespace Code.Core
         [SerializeField] private BoxCollider2D _torusGoalCollider;
         [SerializeField] private CircleCollider2D _ballGoalCollider;
 
+        private void Start()
+        {
+            _ballGoalCollider=  LevelStateHandler.LevelState.Ball.GoalCollider;
+        }
+
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other == _ballGoalCollider)
