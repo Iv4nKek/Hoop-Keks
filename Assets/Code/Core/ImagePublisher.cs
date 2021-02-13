@@ -4,6 +4,6 @@ namespace Code.Core
 {
     public class ImagePublisher : MonoBehaviour
     {
-        private 
+        
     }
 }
