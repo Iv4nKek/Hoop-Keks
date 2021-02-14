@@ -20,13 +20,11 @@
               <e p="PhraseUI.cs" t="Include" />
               <e p="SlowMotion.cs" t="Include" />
             </e>
-            <e p="ImagePublisher.cs" t="Include" />
             <e p="Inputs" t="Include">
               <e p="BotInput.cs" t="Include" />
               <e p="JumpInput.cs" t="Include" />
               <e p="PlayerInput.cs" t="Include" />
             </e>
-            <e p="NativeShare.cs" t="Include" />
             <e p="PlayerResources.cs" t="Include" />
             <e p="Primitives.cs" t="Include" />
             <e p="SceneLoader.cs" t="Include" />

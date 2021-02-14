@@ -10,7 +10,7 @@ namespace Code.Core.Effects
         
         private void Start()
         {
-            LevelStateHandler.Instance.OnBeforeEndMatch += OnGameEnd;
+            LevelStateHandler.Instance.OnBeforeEndMatch += OnBeforeGameEnd;
             LevelStateHandler.Instance.OnStart += ResumeTime;
         }
 
@@ -19,8 +19,9 @@ namespace Code.Core.Effects
             Time.timeScale = 1f;
         }
         
-        private void OnGameEnd(Belongs belongs)
+        private void OnBeforeGameEnd(Belongs belongs)
         {
+            Handheld.Vibrate();
             Time.timeScale = _timeScale;
             StartCoroutine(WaitForSlowMoution(belongs));
         }

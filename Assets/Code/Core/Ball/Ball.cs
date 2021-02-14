@@ -29,12 +29,13 @@ namespace Code.Core
         private void UpdateSkin()
         {
             Skin skin;
-            if (GameStateHandler.Instance.State.IsBonusLevel)
+            if (LevelStateHandler.Instance.IsBonusLevel)
             {
                 skin = SkinHandler.Instance.GetBonusSkin();
             }
             else
             {
+                Debug.Log("def");
                 skin = SkinHandler.Instance.GetBallSkin();
             }
 

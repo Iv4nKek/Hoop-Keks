@@ -6,12 +6,10 @@ namespace Code.Core
 {
     public class SocialShare : MonoBehaviour
     {
-        [SerializeField]
-        string _title;
+        [SerializeField] string _title;
 
         [SerializeField]
-        [Multiline]
-        string _text;
+        [Multiline] string _text;
 
         [SerializeField]
         Texture2D[] _images;

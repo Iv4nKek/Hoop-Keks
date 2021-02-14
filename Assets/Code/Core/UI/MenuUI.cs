@@ -9,6 +9,7 @@ namespace Code.Core.UI
 {
     public class MenuUI : MonoBehaviour
     {
+        [SerializeField] private float _animationDuration;
         [SerializeField] private TMP_Text _winText;
         [SerializeField] private TMP_Text _loseText;
         [SerializeField] private Color _winColor;
@@ -41,7 +42,7 @@ namespace Code.Core.UI
         {
             _menuUI.gameObject.SetActive(true);
             SetLabelText(winner == Belongs.Player);
-            _bonusLevel.fillAmount = _gameStateHandler.State.BonusValue;
+            TweenBonusLevelImage();
             int stage = _gameStateHandler.State.Tournament.Stage;
             int trophyIndex = stage - 1;
             UpdateColors(trophyIndex);
@@ -49,6 +50,10 @@ namespace Code.Core.UI
             TweenTrophy(trophyIndex,current);
         }
 
+        private void TweenBonusLevelImage()
+        {
+            _bonusLevel.DOFillAmount(_gameStateHandler.State.BonusValue, _animationDuration*2f);
+        }
         private void SetLabelText(bool isWin)
         {
             _winText.gameObject.SetActive(isWin);
@@ -64,7 +69,7 @@ namespace Code.Core.UI
 
             if (currentTrophy < _trophies.Length-2)
             {
-                for (int i = currentTrophy+1; i < _trophies.Length-1; i++)
+                for (int i = currentTrophy+1; i < _trophies.Length; i++)
                 {
                     _trophies[i].color = _defaultColor;
                 }
@@ -78,10 +83,10 @@ namespace Code.Core.UI
             Image trophy = _trophies[index];
             trophy.color = color;
             parent.DORewind();
-            parent.transform.DOScale(1.3f, 0.5f).SetLoops(2, LoopType.Yoyo);
+            parent.transform.DOScale(1.3f, _animationDuration).SetLoops(2, LoopType.Yoyo);
             trophy.fillAmount = 0f;
             trophy.DORewind();
-            trophy.DOFillAmount(1, 0.5f).SetLoops(1);
+            trophy.DOFillAmount(1, _animationDuration).SetLoops(1);
 
         }
     }

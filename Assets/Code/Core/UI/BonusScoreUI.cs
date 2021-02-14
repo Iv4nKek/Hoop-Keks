@@ -45,6 +45,7 @@ namespace Code.Core.UI
             if (isBonus)
             {
                 _player.Play();
+                UpdateText();
                 _flex=StartCoroutine(RicardoDance());
             }
             
@@ -54,6 +55,8 @@ namespace Code.Core.UI
             UpdateText();
             TweenScale(_playerScore.rectTransform);
         }
+
+        
 
         private void TweenScale(RectTransform rectTransform)
         {
@@ -79,14 +82,18 @@ namespace Code.Core.UI
                     index = 0;
                 }
 
+                
+                
+
                 if (_textColors.Length != 0)
                 {
                     _playerScore.color = _textColors[index];
                     _ricardoImage.color = _textColors[index++];
                 }
+                UpdateText();
                 ShakeCamera();
                 TweenScore();
-                LevelStateHandler.Instance.AddPoint(Belongs.Player);
+                LevelStateHandler.Instance.MakeFlexBit();
             }
         }
 

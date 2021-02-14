@@ -24,10 +24,8 @@ namespace Code.Core.UI
         {
             _torusSkins = SkinHandler.Instance.PlayerSkins;
             _ballSkins = SkinHandler.Instance.BallSkins;
-            Debug.Log(_torusSkins.Count);
             CreateAll();
             _gameStateHandler = GameStateHandler.Instance;
-           // UpdateSelected();
         }
 
         public void ChangeVisibility()
@@ -39,7 +37,8 @@ namespace Code.Core.UI
 
         private void CreateAll()
         {
-            for (var index = 0; index < _torusSkins.Count; index++)
+            int index = 0;
+            for (index = 0; index < _torusSkins.Count; index++)
             {
                 Skin torusSkin = _torusSkins[index];
                 GameObject go = Instantiate(_cellPrefab,_playerListParent);
@@ -47,10 +46,11 @@ namespace Code.Core.UI
                 cellUI.SetupSkinUI(index,torusSkin, SkinType.Torus, this);
             }
 
-            for (var index = 0; index < _ballSkins.Count; index++)
+            for (index = 0; index < _ballSkins.Count; index++)
             {
                 Skin ballSkin = _ballSkins[index];
                 GameObject go = Instantiate(_cellPrefab,_ballListParent);
+                go.transform.SetSiblingIndex(index);
                 CellUI cellUI = go.GetComponent<CellUI>();
                 cellUI.SetupSkinUI(index,ballSkin, SkinType.Ball, this);
             }
@@ -58,16 +58,16 @@ namespace Code.Core.UI
 
         public void OnSkinSelect(CellUI cellUI)
         {
-            if (cellUI.SkinType == SkinType.Ball)
+            if (cellUI.SkinType == SkinType.Ball )
             {
-                if(_selectedBall != null)
+                if(_selectedBall != null && _selectedBall.Index != cellUI.Index)
                     _selectedBall.Deselect();
                 _gameStateHandler.State.BallSkin = cellUI.Index;
                 _selectedBall = cellUI;
             }
             else
             {
-                if(_selectedTorus != null)
+                if(_selectedTorus != null && _selectedTorus.Index != cellUI.Index)
                     _selectedTorus.Deselect();
                 _gameStateHandler.State.TorusSkin = cellUI.Index;
                 _selectedTorus = cellUI;

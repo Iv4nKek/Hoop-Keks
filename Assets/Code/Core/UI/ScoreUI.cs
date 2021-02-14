@@ -23,6 +23,7 @@ namespace Code.Core.UI
         {
             _levelStateHandler = LevelStateHandler.Instance;
             _levelStateHandler.OnGoal += HandleGoal;
+            _levelStateHandler.OnFlexBit += HandleGoal;
             _levelStateHandler.OnReset += UpdateText;
             _levelStateHandler.OnStart += OnStart;
             _playerScore.color = _defaulColor;
@@ -39,6 +40,7 @@ namespace Code.Core.UI
      
         private void HandleGoal(Belongs belongs)
         {
+            
             UpdateText();
             if(belongs == Belongs.Player)
                 UpdateScore(_playerScore,_levelStateHandler.PlayerScore);
@@ -48,6 +50,7 @@ namespace Code.Core.UI
 
         private void UpdateText()
         {
+         
             _playerScore.text = _levelStateHandler.PlayerScore.ToString();
             _botScore.text = _levelStateHandler.BotScore.ToString();
         }

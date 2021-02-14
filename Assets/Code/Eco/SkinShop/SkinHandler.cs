@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Code.Core;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -22,7 +23,7 @@ namespace Code.Eco
 
         public Skin GetBallSkin()
         {
-            return PickRandom(_skinContainer.BallSkins);
+            return _skinContainer.BallSkins[GameStateHandler.Instance.State.BallSkin];
         }
 
         public Skin GetBotSkin()
@@ -32,7 +33,7 @@ namespace Code.Eco
         
         public Skin GetPlayerSkin()
         {
-            return PickRandom(_skinContainer.PlayerSkins);
+            return _skinContainer.PlayerSkins[GameStateHandler.Instance.State.TorusSkin];
         }
         private Skin PickRandom(List<Skin> skins)
         {

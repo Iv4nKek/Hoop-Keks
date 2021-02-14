@@ -20,19 +20,19 @@ MonoBehaviour:
   _playerSkins:
   - _name: 
     _money: 0
-    _icon: {fileID: 0}
+    _icon: {fileID: 21300000, guid: 3bd058100b80ff143a798090995ae03d, type: 3}
     _material: {fileID: 2100000, guid: 5a1b23c2761f68c4babec4767c48b17d, type: 2}
   - _name: 
     _money: 0
-    _icon: {fileID: 0}
+    _icon: {fileID: 21300000, guid: 17a0f98db7af05540a0c2d4cb7e5c58f, type: 3}
     _material: {fileID: 2100000, guid: 696396975b649e247b8930473dd51c55, type: 2}
   - _name: 
     _money: 0
-    _icon: {fileID: 0}
+    _icon: {fileID: 21300000, guid: 3b31cd2c499726546b5d679067c251ca, type: 3}
     _material: {fileID: 2100000, guid: d3a7a18541c941247a8f8e8edf865209, type: 2}
   - _name: 
     _money: 0
-    _icon: {fileID: 0}
+    _icon: {fileID: 21300000, guid: 41c0b3b7a8f72b5499bdfd6dfd4011e2, type: 3}
     _material: {fileID: 2100000, guid: a5eb38e94084b914c8b3ce9a809fc40e, type: 2}
   _botSkins:
   - _name: 
@@ -50,17 +50,17 @@ MonoBehaviour:
   _ballSkins:
   - _name: 
     _money: 0
-    _icon: {fileID: 21300000, guid: 0c9731c5657e31b49884595aab11548a, type: 3}
+    _icon: {fileID: 21300000, guid: 9aba1cbbb8d4152439bfb721d1240948, type: 3}
     _material: {fileID: 2100000, guid: 4409a5eb9909d4f4496a6adbdda12add, type: 2}
   - _name: 
     _money: 0
-    _icon: {fileID: 21300000, guid: 9aba1cbbb8d4152439bfb721d1240948, type: 3}
+    _icon: {fileID: 21300000, guid: 1d9005bdf4d529640bfd67d9eef1935e, type: 3}
     _material: {fileID: 2100000, guid: 9259f69f33c08b743a132c4fa2ea3aa2, type: 2}
   - _name: 
     _money: 0
-    _icon: {fileID: 21300000, guid: 1d9005bdf4d529640bfd67d9eef1935e, type: 3}
+    _icon: {fileID: 21300000, guid: ed78fc5f96eb73b49bbbbd726e48110f, type: 3}
     _material: {fileID: 2100000, guid: 06bce593fca821c45b5ea121ab784795, type: 2}
   - _name: 
     _money: 0
-    _icon: {fileID: 21300000, guid: ed78fc5f96eb73b49bbbbd726e48110f, type: 3}
+    _icon: {fileID: 21300000, guid: 0c9731c5657e31b49884595aab11548a, type: 3}
     _material: {fileID: 2100000, guid: 1101f2a9cc8a7c14eb7be7bd42bb1aca, type: 2}

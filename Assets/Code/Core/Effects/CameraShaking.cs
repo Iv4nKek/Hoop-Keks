@@ -23,7 +23,7 @@ namespace Code.Core.Effects
             transform.DORewind();
             transform.DOKill();
             transform.DOShakePosition(1,new Vector3(1,1,0)*_shakePower,5);
-            Handheld.Vibrate();
+           
         }
     }
 }

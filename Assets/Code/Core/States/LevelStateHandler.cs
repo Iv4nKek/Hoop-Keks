@@ -7,9 +7,7 @@ namespace Code.Core
     {
         [SerializeField] private int _winScore;
         [SerializeField] private int _levelTime;
-        
-        
-        
+
         private static LevelStateHandler _instanceHandler;
         private int _playerScore;
         private int _botScore;
@@ -17,16 +15,16 @@ namespace Code.Core
         private bool _isScoreLocked;
         private bool _isBonusLevel;
 
+        public event Action<Belongs> OnGoal = delegate(Belongs belongs) { };
+        public event Action<Belongs> OnFlexBit = delegate(Belongs belongs) { };
 
-        public event Action<Belongs> OnGoal = delegate(Belongs belongs) {  };
-        public event Action<Belongs> OnEndMatch = delegate(Belongs belongs) {  };
-        public event Action<Belongs> OnBeforeEndMatch = delegate(Belongs belongs) {  };
-        public event Action OnReset = delegate {  };
-        public event Action OnStart = delegate {  };
-        
-        
-        public static LevelStateHandler Instance=> _instanceHandler;
-        
+        public event Action<Belongs> OnEndMatch = delegate(Belongs belongs) { };
+        public event Action<Belongs> OnBeforeEndMatch = delegate(Belongs belongs) { };
+        public event Action OnReset = delegate { };
+        public event Action OnStart = delegate { };
+
+        public static LevelStateHandler Instance => _instanceHandler;
+
         public int BotScore => _botScore;
 
         public int PlayerScore => _playerScore;
@@ -57,15 +55,21 @@ namespace Code.Core
 
         public void StartLevel()
         {
-            if (GameStateHandler.Instance.State.BonusValue >= 1f)
+            GameStateHandler instance = GameStateHandler.Instance;
+
+            if (instance.State.Tournament.Stage >= 5)
+            {
+                instance.State.Tournament.Stage = 0;
+            }
+
+            if (instance.State.BonusValue >= 1f)
             {
                 _isBonusLevel = true;
-                GameStateHandler.Instance.State.BonusValue = 0f;
+                instance.State.BonusValue = 0f;
             }
-            Debug.Log("start");
+
             OnStart();
         }
-       
 
         public void Reset()
         {
@@ -74,37 +78,41 @@ namespace Code.Core
             OnReset();
         }
 
-       
+        public void MakeFlexBit()
+        {
+            AddPointToPlayer(1);
+            OnFlexBit.Invoke(Belongs.Player);
+        }
+
         public void AddPoint(Belongs belongs)
         {
-            if(_isScoreLocked)
-                return;
+            if (_isScoreLocked) return;
+            int points = _isBonusLevel ? 5 : 1;
             if (belongs == Belongs.Player)
             {
-                AddPointToPlayer();
+                AddPointToPlayer(points);
             }
             else
             {
-                AddPointToBot();
+                AddPointToBot(points);
             }
 
             OnGoal(belongs);
         }
-        private void AddPointToPlayer()
+
+        private void AddPointToPlayer(int count)
         {
-            //Debug.Log("goal" + _winScore);
-            _playerScore++;
+            _playerScore += count;
             if (_playerScore >= _winScore && !_isBonusLevel)
             {
-                
                 StartMatchEnding(Belongs.Player);
             }
         }
 
-        private void AddPointToBot()
+        private void AddPointToBot(int count)
         {
-            _botScore++;
-            if (_botScore >= _winScore&& !_isBonusLevel)
+            _botScore += count;
+            if (_botScore >= _winScore && !_isBonusLevel)
             {
                 StartMatchEnding(Belongs.Enemy);
             }
@@ -118,31 +126,29 @@ namespace Code.Core
 
         private void StartMatchEnding(Belongs winner)
         {
-            if(!_isBonusLevel)
-                GameStateHandler.Instance.State.Tournament.AddStage();;
+            if (!_isBonusLevel) GameStateHandler.Instance.State.Tournament.AddStage();
             _isScoreLocked = true;
             OnBeforeEndMatch(winner);
         }
+
         public void EndMatch(Belongs winner)
         {
             if (!_isBonusLevel)
             {
                 GameStateHandler.Instance.AddToBonusLevel();
-                if (GameStateHandler.Instance.State.Tournament.Stage>5)
-                {
-                    GameStateHandler.Instance.State.Tournament.Stage = 0;
-                }
             }
-                
             else
             {
                 _isBonusLevel = false;
             }
+
             Time.timeScale = 0f;
             _isScoreLocked = false;
             OnEndMatch(winner);
-
+            if (winner == Belongs.Enemy)
+            {
+                GameStateHandler.Instance.State.Tournament.Stage = 0;
+            }
         }
-        
     }
 }

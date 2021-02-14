@@ -8,10 +8,11 @@ namespace Code.Core
 {
     public class GameStateHandler : MonoBehaviour
     {
-        [SerializeField]private GameState _gameState;
+        [SerializeField] private GameState _gameState;
         [SerializeField] private float _bonusLevelIncome;
 
         private static GameStateHandler _gameInstance;
+
         public GameState State => _gameState;
         public static PlayerResources Resources => _gameInstance._gameState.PlayerResources;
 
@@ -23,7 +24,10 @@ namespace Code.Core
             {
                 _gameInstance = this;
             }
+
+            LoadGameState();
         }
+
         public void AddToBonusLevel()
         {
             _gameState.BonusValue += _bonusLevelIncome;
@@ -33,18 +37,12 @@ namespace Code.Core
             }
         }
 
-        private void Start()
-        {
-            LoadGameState();
-            
-        }
-
         private void OnDestroy()
         {
             SaveGameState();
         }
 
-        public void SaveGameState()
+        private void SaveGameState()
         {
             BinaryFormatter formatter = new BinaryFormatter();
             using (FileStream fs = new FileStream("gameState.dat", FileMode.Create))
@@ -56,13 +54,13 @@ namespace Code.Core
 
         private void LoadGameState()
         {
-            
-            /*BinaryFormatter formatter = new BinaryFormatter();
+            //_gameState = new GameState();
+            BinaryFormatter formatter = new BinaryFormatter();
             if (System.IO.File.Exists("gameState.dat"))
             {
                 using (FileStream fs = new FileStream("gameState.dat", FileMode.Open))
                 {
-                    GameState gameState =  (GameState)formatter.Deserialize(fs);
+                    GameState gameState = (GameState) formatter.Deserialize(fs);
                     if (gameObject != null)
                     {
                         _gameState = gameState;
@@ -78,8 +76,7 @@ namespace Code.Core
                 GameState gameState = new GameState();
                 _gameState = gameState;
                 SaveGameState();
-            }*/
-            
+            }
         }
     }
 }
