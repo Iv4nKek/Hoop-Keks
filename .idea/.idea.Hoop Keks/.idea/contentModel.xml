@@ -47,9 +47,11 @@
             </e>
             <e p="UI" t="Include">
               <e p="BonusScoreUI.cs" t="Include" />
+              <e p="CellUI.cs" t="Include" />
               <e p="MenuUI.cs" t="Include" />
               <e p="PointsUI.cs" t="Include" />
               <e p="ScoreUI.cs" t="Include" />
+              <e p="ShopUI.cs" t="Include" />
               <e p="TapToStart.cs" t="Include" />
               <e p="TimeUI.cs" t="Include" />
             </e>

@@ -13,6 +13,7 @@ namespace Code.Core
 
         private static GameStateHandler _gameInstance;
         public GameState State => _gameState;
+        public static PlayerResources Resources => _gameInstance._gameState.PlayerResources;
 
         public static GameStateHandler Instance => _gameInstance;
 

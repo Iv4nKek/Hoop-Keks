@@ -35,7 +35,8 @@ namespace Code.Core.UI
         private void Pause(Belongs winner)
         {
             _player.Stop();
-            StopCoroutine(_flex);
+            if(_flex != null)
+                StopCoroutine(_flex);
         }
         private void OnGameStart()
         {

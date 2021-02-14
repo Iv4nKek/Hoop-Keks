@@ -2,50 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebbed2e6-8421-4910-a8ac-65e9884663d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/SocialShare.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/SocialShare.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/BonusScoreUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/BonusScoreUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Sharing.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Sharing.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/CellUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/CellUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/ShopUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/ShopUI.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Ball/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Ball/Ball.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Ball/BallSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Ball/BallSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/DebugKek.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/DebugKek.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Effects/CameraShaking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Effects/CameraShaking.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Effects/SlowMotion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Effects/SlowMotion.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/ImagePublisher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/ImagePublisher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Inputs/BotInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Inputs/BotInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Inputs/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Inputs/PlayerInput.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Core/States/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/States/GameState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Core/States/GameStateHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/States/GameStateHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/States/LevelStateHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/States/LevelStateHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Torus/AreaHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Torus/AreaHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Torus/GoalHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Torus/GoalHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Torus/Torus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Torus/Torus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Torus/TorusSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Torus/TorusSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Tournament/Tournament.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Tournament/Tournament.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/UI/MenuUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/MenuUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/UI/PointsUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/PointsUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/UI/ScoreUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/ScoreUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/UI/TimeUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/TimeUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Eco/Skin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Eco/Skin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Eco/SkinContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Eco/SkinContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Eco/SkinShop/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Eco/SkinShop/SkinHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Eco/SkinShop/Shop.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Eco/SkinShop/SkinHandler.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Materials/Torus.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/Materials/Torus.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Graphics/torbrowser-install-win64-10.0.11_ru.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Graphics/torbrowser-install-win64-10.0.11_ru.exe.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/UI/BonusScoreUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/BonusScoreUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Eco/SkinShop/SkinHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Eco/SkinShop/SkinHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PhraseContainer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PhraseContainer.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/SkinContainer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SkinContainer.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gameState.dat" beforeDir="false" afterPath="$PROJECT_DIR$/gameState.dat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,13 +64,10 @@
       <option value="$PROJECT_DIR$/Assets/Code/Sharing.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/SocialShare.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/SlowMotion.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/States/GameState.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/States/GameStateHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Eco/Skin.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Ball/Ball.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Primitives.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Eco/SkinContainer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Eco/SkinShop/SkinHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Torus/Torus.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/UI/ScoreUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Torus/TorusSpawner.cs" />
@@ -110,9 +77,14 @@
       <option value="$PROJECT_DIR$/Assets/Code/Core/States/LevelStateHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Tournament/Tournament.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/DebugKek.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/UI/BonusScoreUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/States/GameStateHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/UI/BonusScoreUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/States/GameState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Eco/SkinShop/SkinHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/UI/CellUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/UI/ShopUI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oICPZfTZ5wd0MJsVQWDL2WSebG" />
@@ -200,7 +172,7 @@
       <workItem from="1613052358134" duration="1536000" />
       <workItem from="1613055300558" duration="24419000" />
       <workItem from="1613139266730" duration="30913000" />
-      <workItem from="1613220199545" duration="34774000" />
+      <workItem from="1613220199545" duration="41570000" />
     </task>
     <task id="LOCAL-00001" summary="Core done">
       <created>1613224059819</created>
@@ -216,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613224612969</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Bonus Level">
+      <created>1613270084442</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613270084442</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -237,7 +216,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Core done" />
     <MESSAGE value="Core done fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Core done fix" />
+    <MESSAGE value="Bonus Level" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bonus Level" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

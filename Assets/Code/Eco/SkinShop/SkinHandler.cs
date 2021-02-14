@@ -12,7 +12,8 @@ namespace Code.Eco
 
         public static SkinHandler Instance => _skinHandler;
 
-       
+        public List<Skin> PlayerSkins => _skinContainer.PlayerSkins; 
+        public List<Skin> BallSkins => _skinContainer.BallSkins; 
 
         public Skin GetBonusSkin()
         {

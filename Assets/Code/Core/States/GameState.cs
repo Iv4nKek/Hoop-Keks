@@ -10,8 +10,11 @@ namespace Code.Core
         [SerializeField]private Tournament _tournament;
         [SerializeField]private float _bonusValue;
         [SerializeField]private PlayerResources _playerResources;
-        [SerializeField]private List<string> _availableSkins;
         [SerializeField]private bool _isBonusLevel;
+        //Skins
+        [SerializeField]private List<string> _availableSkins;
+        [SerializeField] private int _ballSkin;
+        [SerializeField] private int _torusSkin;
 
         public Tournament Tournament => _tournament;
 
@@ -29,6 +32,18 @@ namespace Code.Core
         {
             get => _isBonusLevel;
             set => _isBonusLevel = value;
+        }
+
+        public int TorusSkin
+        {
+            get => _torusSkin;
+            set => _torusSkin = value;
+        }
+
+        public int BallSkin
+        {
+            get => _ballSkin;
+            set => _ballSkin = value;
         }
     }
 }

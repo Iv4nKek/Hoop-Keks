@@ -50,17 +50,17 @@ MonoBehaviour:
   _ballSkins:
   - _name: 
     _money: 0
-    _icon: {fileID: 0}
+    _icon: {fileID: 21300000, guid: 0c9731c5657e31b49884595aab11548a, type: 3}
     _material: {fileID: 2100000, guid: 4409a5eb9909d4f4496a6adbdda12add, type: 2}
   - _name: 
     _money: 0
-    _icon: {fileID: 0}
+    _icon: {fileID: 21300000, guid: 9aba1cbbb8d4152439bfb721d1240948, type: 3}
     _material: {fileID: 2100000, guid: 9259f69f33c08b743a132c4fa2ea3aa2, type: 2}
   - _name: 
     _money: 0
-    _icon: {fileID: 0}
+    _icon: {fileID: 21300000, guid: 1d9005bdf4d529640bfd67d9eef1935e, type: 3}
     _material: {fileID: 2100000, guid: 06bce593fca821c45b5ea121ab784795, type: 2}
   - _name: 
     _money: 0
-    _icon: {fileID: 0}
+    _icon: {fileID: 21300000, guid: ed78fc5f96eb73b49bbbbd726e48110f, type: 3}
     _material: {fileID: 2100000, guid: 1101f2a9cc8a7c14eb7be7bd42bb1aca, type: 2}
