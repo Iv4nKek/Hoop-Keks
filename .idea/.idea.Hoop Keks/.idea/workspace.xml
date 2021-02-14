@@ -2,6 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebbed2e6-8421-4910-a8ac-65e9884663d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Graphics/Sprites/Снимок экрана 2021-02-14 170948.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Graphics/Sprites/Снимок экрана 2021-02-14 170948.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Graphics/Sprites/Снимок экрана 2021-02-14 171002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Graphics/Sprites/Снимок экрана 2021-02-14 171002.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Graphics/Sprites/Снимок экрана 2021-02-14 171015.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Graphics/Sprites/Снимок экрана 2021-02-14 171015.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Graphics/Sprites/Снимок экрана 2021-02-14 171037.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Graphics/Sprites/Снимок экрана 2021-02-14 171037.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Graphics/Sprites/Снимок экрана 2021-02-14 171054.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Graphics/Sprites/Снимок экрана 2021-02-14 171054.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Graphics/Sprites/Снимок экрана 2021-02-14 171105.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Graphics/Sprites/Снимок экрана 2021-02-14 171105.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Graphics/Sprites/Снимок экрана 2021-02-14 171124.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Graphics/Sprites/Снимок экрана 2021-02-14 171124.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Graphics/Sprites/Снимок экрана 2021-02-14 185940.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Graphics/Sprites/Снимок экрана 2021-02-14 185940.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Graphics/coin_PNG36871.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Graphics/coin_PNG36871.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Player Torus.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Player Torus.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Ball/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Ball/Ball.cs" afterDir="false" />
@@ -23,7 +43,9 @@
       <change beforePath="$PROJECT_DIR$/Assets/Code/Core/UI/ShopUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/ShopUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Core/WallColliderCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/WallColliderCreator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Eco/SkinShop/SkinHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Eco/SkinShop/SkinHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Sprites/Frame.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/Sprites/Frame.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cell.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/PhraseContainer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PhraseContainer.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/SkinContainer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SkinContainer.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
@@ -40,6 +62,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Projects/Hoop Keks/Assets/Code/Core/Ball/Ball.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29AD182F-AA3F-478C-9310-D6A2E7143C15/a2/e3cd6f40/Texture.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Core/Inputs/PlayerInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Core/Primitives.cs" root0="FORCE_HIGHLIGHTING" />
@@ -90,13 +113,13 @@
       <option value="$PROJECT_DIR$/Assets/Code/Core/Torus/Torus.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Eco/SkinShop/SkinHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Ball/Ball.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/UI/ShopUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/UI/MenuUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/CameraShaking.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/SlowMotion.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/States/GameState.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/States/GameStateHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/States/LevelStateHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/UI/ShopUI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oICPZfTZ5wd0MJsVQWDL2WSebG" />
@@ -187,7 +210,7 @@
       <workItem from="1613055300558" duration="24419000" />
       <workItem from="1613139266730" duration="30913000" />
       <workItem from="1613220199545" duration="41743000" />
-      <workItem from="1613310409699" duration="11154000" />
+      <workItem from="1613310409699" duration="11669000" />
     </task>
     <task id="LOCAL-00001" summary="Core done">
       <created>1613224059819</created>
@@ -240,7 +263,8 @@
     <MESSAGE value="Core done fix" />
     <MESSAGE value="Bonus Level" />
     <MESSAGE value="Shop 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Shop 1.0" />
+    <MESSAGE value="Shop fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Shop fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
