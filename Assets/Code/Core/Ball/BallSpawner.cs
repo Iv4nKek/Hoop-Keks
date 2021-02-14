@@ -13,12 +13,17 @@ namespace Code.Core
         [SerializeField] private Transform _to;
 
         private Transform _current;
-        private void Start()
+        private void OnEnable()
         {
-            //Spawn();
             LevelStateHandler.Instance.OnGoal += Translate;
             LevelStateHandler.Instance.OnReset += DeSpawn;
             LevelStateHandler.Instance.OnStart += Spawn;
+        }
+        private void OnDisable()
+        {
+            LevelStateHandler.Instance.OnGoal -= Translate;
+            LevelStateHandler.Instance.OnReset -= DeSpawn;
+            LevelStateHandler.Instance.OnStart -= Spawn;
         }
 
         private void Translate(Belongs winner)

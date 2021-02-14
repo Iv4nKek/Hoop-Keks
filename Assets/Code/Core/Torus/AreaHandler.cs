@@ -11,7 +11,7 @@ namespace Code.Core
 
         private void Start()
         {
-            _ballAreaCollider=  LevelStateHandler.Instance.Ball.AreaCollider;
+            _ballAreaCollider = LevelStateHandler.Instance.Ball.AreaCollider;
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -21,7 +21,5 @@ namespace Code.Core
                 _torus.UnlockGoal();
             }
         }
-
-      
     }
 }

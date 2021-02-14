@@ -29,6 +29,7 @@ namespace Code.Core.Effects
            LevelStateHandler.Instance.OnFlexBit+=OnGoal;
            LevelStateHandler.Instance.OnReset+=DisableText;
         }
+        
 
        
 

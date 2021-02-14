@@ -24,13 +24,28 @@ namespace Code.Core
 
         private void Start()
         {
-            UpdateBallColliders();
+            
+            _jumpInput.OnLeftJump += JumpLeft;
+            _jumpInput.OnRightJump += JumpRight;
             LevelStateHandler.Instance.OnBeforeEndMatch += LockControl;
             LevelStateHandler.Instance.OnStart += UnlockControl;
             LevelStateHandler.Instance.OnStart += UpdateBallColliders;
             LevelStateHandler.Instance.OnStart += UpdateSkin;
+            UpdateBallColliders();
             UpdateSkin();
         }
+      
+        /*private void OnDestroy()
+        {
+            Debug.Log("d");
+            _jumpInput.OnLeftJump -= JumpLeft;
+            _jumpInput.OnRightJump -= JumpRight;
+            LevelStateHandler.Instance.OnBeforeEndMatch -= LockControl;
+            LevelStateHandler.Instance.OnStart -= UnlockControl;
+            LevelStateHandler.Instance.OnStart -= UpdateBallColliders;
+            LevelStateHandler.Instance.OnStart -= UpdateSkin;
+            
+        }*/
         private void UpdateSkin()
         {
             Skin skin;
@@ -63,11 +78,7 @@ namespace Code.Core
             Physics2D.IgnoreCollision(ball.GoalCollider, GetComponent<PolygonCollider2D>());
         }
 
-        private void OnEnable()
-        {
-            _jumpInput.OnLeftJump += JumpLeft;
-            _jumpInput.OnRightJump += JumpRight;
-        }
+       
 
         public void UnlockGoal()
         {
@@ -82,7 +93,7 @@ namespace Code.Core
                 LevelStateHandler.Instance.AddPoint(_belongs);
             }
         }
-        public void JumpRight()
+        private void JumpRight()
         {
             if(_controlLocked)
                 return;
@@ -93,7 +104,7 @@ namespace Code.Core
             _rigidbody2D.AddForce(force);
         }
 
-        public void JumpLeft()
+        private void JumpLeft()
         {
             if(_controlLocked)
                 return;
@@ -102,11 +113,7 @@ namespace Code.Core
             _rigidbody2D.AddForce(new Vector2(-_jumpVector.x,_jumpVector.y)*_jumpForce);
         }
 
-        private void OnDisable()
-        {
-            _jumpInput.OnLeftJump -= JumpLeft;
-            _jumpInput.OnRightJump -= JumpRight;
-        }
+      
 
        
     }

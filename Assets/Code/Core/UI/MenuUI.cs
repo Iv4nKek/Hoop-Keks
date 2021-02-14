@@ -61,6 +61,7 @@ namespace Code.Core.UI
         }
         private void UpdateColors(int currentTrophy)
         {
+            currentTrophy = Math.Abs(currentTrophy);
             for (int i = 0; i < currentTrophy+1; i++)
             {
                 _trophies[i].color = _winColor;

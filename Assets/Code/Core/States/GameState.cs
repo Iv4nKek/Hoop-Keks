@@ -27,10 +27,7 @@ namespace Code.Core
         public float BonusValue
         {
             get => _bonusValue;
-            set
-            {
-                if (_bonusValue > 0) _bonusValue = value;
-            }
+            set => _bonusValue = value;
         }
 
         public bool IsBonusLevel

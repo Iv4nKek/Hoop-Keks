@@ -57,7 +57,7 @@ namespace Code.Core
         {
             GameStateHandler instance = GameStateHandler.Instance;
 
-            if (instance.State.Tournament.Stage >= 5)
+            if (instance.State.Tournament.Stage >= 4)
             {
                 instance.State.Tournament.Stage = 0;
             }
@@ -133,7 +133,7 @@ namespace Code.Core
 
         public void EndMatch(Belongs winner)
         {
-            if (!_isBonusLevel)
+            if (!_isBonusLevel && winner == Belongs.Player)
             {
                 GameStateHandler.Instance.AddToBonusLevel();
             }

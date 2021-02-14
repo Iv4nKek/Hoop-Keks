@@ -35,10 +35,8 @@ namespace Code.Core
             }
             else
             {
-                Debug.Log("def");
                 skin = SkinHandler.Instance.GetBallSkin();
             }
-
             _renderer.material = skin.Material;
 
 
