@@ -6,6 +6,7 @@ namespace Code.Core.Effects
     public class PhraseContainer : ScriptableObject
     {
         [SerializeField]private List<string> _phrases;
+        [SerializeField]private List<string> _goalPhrases;
 
         public List<string> Phrases => _phrases;
     }

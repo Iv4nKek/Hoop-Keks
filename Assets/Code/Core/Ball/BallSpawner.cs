@@ -16,9 +16,9 @@ namespace Code.Core
         private void Start()
         {
             //Spawn();
-            LevelStateHandler.LevelState.OnGoal += Translate;
-            LevelStateHandler.LevelState.OnReset += DeSpawn;
-            LevelStateHandler.LevelState.OnStart += Spawn;
+            LevelStateHandler.Instance.OnGoal += Translate;
+            LevelStateHandler.Instance.OnReset += DeSpawn;
+            LevelStateHandler.Instance.OnStart += Spawn;
         }
 
         private void Translate(Belongs winner)

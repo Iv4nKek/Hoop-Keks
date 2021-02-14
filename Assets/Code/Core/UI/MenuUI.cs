@@ -20,17 +20,19 @@ namespace Code.Core.UI
         [SerializeField] private Image[] _trophies = new Image[4];
         [SerializeField] private Transform _menuUI;
 
+        [SerializeField] private Image _bonusLevel;
+
         private GameStateHandler _gameStateHandler;
 
         private void Start()
         {
-            _gameStateHandler = GameStateHandler.StateHandler;
+            _gameStateHandler = GameStateHandler.Instance;
             foreach (var trophey in _trophies)
             {
                 trophey.color = _defaultColor;
             }
 
-            LevelStateHandler.LevelState.OnEndMatch += UpdateUI;
+            LevelStateHandler.Instance.OnEndMatch += UpdateUI;
         }
 
         
@@ -39,6 +41,7 @@ namespace Code.Core.UI
         {
             _menuUI.gameObject.SetActive(true);
             SetLabelText(winner == Belongs.Player);
+            _bonusLevel.fillAmount = _gameStateHandler.State.BonusValue;
             int stage = _gameStateHandler.State.Tournament.Stage;
             int trophyIndex = stage - 1;
             UpdateColors(trophyIndex);
@@ -78,7 +81,7 @@ namespace Code.Core.UI
             parent.transform.DOScale(1.3f, 0.5f).SetLoops(2, LoopType.Yoyo);
             trophy.fillAmount = 0f;
             trophy.DORewind();
-            trophy.DOFillAmount(1, 0.5f);
+            trophy.DOFillAmount(1, 0.5f).SetLoops(1);
 
         }
     }

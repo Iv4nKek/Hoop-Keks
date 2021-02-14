@@ -170,3 +170,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _areaCollider: {fileID: 7699768178598276019}
   _goalCollider: {fileID: 7699768178598276025}
+  _renderer: {fileID: 7699768178598276021}

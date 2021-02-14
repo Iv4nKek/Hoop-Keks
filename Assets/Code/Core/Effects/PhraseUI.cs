@@ -25,8 +25,8 @@ namespace Code.Core.Effects
 
         private void Start()
         {
-           LevelStateHandler.LevelState.OnGoal+=OnGoal;
-           LevelStateHandler.LevelState.OnReset+=DisableText;
+           LevelStateHandler.Instance.OnGoal+=OnGoal;
+           LevelStateHandler.Instance.OnReset+=DisableText;
         }
 
        

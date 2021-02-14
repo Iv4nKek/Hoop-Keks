@@ -12,24 +12,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dac63044c4dd48fb8a4a4415c148d62e, type: 3}
   m_Name: SkinContainer
   m_EditorClassIdentifier: 
-  _skins:
-  - _name: Default
+  _bonusBallSkin:
+    _name: b
     _money: 0
     _icon: {fileID: 0}
-    _texture: {fileID: 0}
+    _material: {fileID: 2100000, guid: 7e47a48be68c9744b9d7f8b959fff5d1, type: 2}
+  _playerSkins:
   - _name: 
     _money: 0
     _icon: {fileID: 0}
-    _texture: {fileID: 0}
+    _material: {fileID: 2100000, guid: 5a1b23c2761f68c4babec4767c48b17d, type: 2}
   - _name: 
     _money: 0
     _icon: {fileID: 0}
-    _texture: {fileID: 0}
+    _material: {fileID: 2100000, guid: 696396975b649e247b8930473dd51c55, type: 2}
   - _name: 
     _money: 0
     _icon: {fileID: 0}
-    _texture: {fileID: 0}
+    _material: {fileID: 2100000, guid: d3a7a18541c941247a8f8e8edf865209, type: 2}
   - _name: 
     _money: 0
     _icon: {fileID: 0}
-    _texture: {fileID: 0}
+    _material: {fileID: 2100000, guid: a5eb38e94084b914c8b3ce9a809fc40e, type: 2}
+  _botSkins:
+  - _name: 
+    _money: 0
+    _icon: {fileID: 0}
+    _material: {fileID: 2100000, guid: 91c353e81c6436f469713133eb2da753, type: 2}
+  - _name: 
+    _money: 0
+    _icon: {fileID: 0}
+    _material: {fileID: 2100000, guid: d925b4b30ea240649ae4e12a56f274bf, type: 2}
+  - _name: 
+    _money: 0
+    _icon: {fileID: 0}
+    _material: {fileID: 2100000, guid: 051af40ccbe50c04da40225e9d9dd932, type: 2}
+  _ballSkins:
+  - _name: 
+    _money: 0
+    _icon: {fileID: 0}
+    _material: {fileID: 2100000, guid: 4409a5eb9909d4f4496a6adbdda12add, type: 2}
+  - _name: 
+    _money: 0
+    _icon: {fileID: 0}
+    _material: {fileID: 2100000, guid: 9259f69f33c08b743a132c4fa2ea3aa2, type: 2}
+  - _name: 
+    _money: 0
+    _icon: {fileID: 0}
+    _material: {fileID: 2100000, guid: 06bce593fca821c45b5ea121ab784795, type: 2}
+  - _name: 
+    _money: 0
+    _icon: {fileID: 0}
+    _material: {fileID: 2100000, guid: 1101f2a9cc8a7c14eb7be7bd42bb1aca, type: 2}

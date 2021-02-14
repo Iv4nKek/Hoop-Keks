@@ -1,5 +1,6 @@
 using System;
 using Code.Core.Inputs;
+using Code.Eco;
 using UnityEngine;
 
 namespace Code.Core
@@ -14,6 +15,7 @@ namespace Code.Core
         [SerializeField] private Rigidbody2D _rigidbody2D;
         [SerializeField] private CircleCollider2D _ballCollider;
         [SerializeField] private CircleCollider2D _ballGoalCollider;
+        [SerializeField] private MeshRenderer _renderer;
 
         
         private bool _goalLocked;
@@ -23,11 +25,28 @@ namespace Code.Core
         private void Start()
         {
             UpdateBallColliders();
-            LevelStateHandler.LevelState.OnBeforeEndMatch += LockControl;
-            LevelStateHandler.LevelState.OnStart += UnlockControl;
-            LevelStateHandler.LevelState.OnStart += UpdateBallColliders;
+            LevelStateHandler.Instance.OnBeforeEndMatch += LockControl;
+            LevelStateHandler.Instance.OnStart += UnlockControl;
+            LevelStateHandler.Instance.OnStart += UpdateBallColliders;
+            LevelStateHandler.Instance.OnStart += UpdateSkin;
+            UpdateSkin();
         }
+        private void UpdateSkin()
+        {
+            Skin skin;
+            if (_belongs == Belongs.Player)
+            {
+                skin = SkinHandler.Instance.GetPlayerSkin();
+            }
+            else
+            {
+                skin = SkinHandler.Instance.GetBotSkin();
+            }
 
+            _renderer.material = skin.Material;
+
+
+        }
         private void LockControl(Belongs belongs)
         {
             _controlLocked = true;
@@ -39,7 +58,7 @@ namespace Code.Core
         }
         public void UpdateBallColliders()
         {
-            Ball ball = LevelStateHandler.LevelState.Ball;
+            Ball ball = LevelStateHandler.Instance.Ball;
             Physics2D.IgnoreCollision(ball.AreaCollider, GetComponent<PolygonCollider2D>());
             Physics2D.IgnoreCollision(ball.GoalCollider, GetComponent<PolygonCollider2D>());
         }
@@ -60,7 +79,7 @@ namespace Code.Core
             if (!_goalLocked)
             {
                 _goalLocked = true;
-                LevelStateHandler.LevelState.AddPoint(_belongs);
+                LevelStateHandler.Instance.AddPoint(_belongs);
             }
         }
         public void JumpRight()

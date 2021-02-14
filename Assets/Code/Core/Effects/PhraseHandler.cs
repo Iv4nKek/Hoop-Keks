@@ -28,11 +28,11 @@ namespace Code.Core.Effects
                 return "PEPEGA";
             if (currentPhrase < _phrases.Count)
             {
-                if (++currentPhrase == _phrases.Count)
+                if (currentPhrase == _phrases.Count)
                 {
                     currentPhrase = 0;
                 }
-                return _phrases[currentPhrase];
+                return _phrases[currentPhrase++];
                
             }
             else
@@ -41,6 +41,8 @@ namespace Code.Core.Effects
                 return GetPhrase();
             }
         }
+       
+
         
     }
 }

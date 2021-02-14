@@ -31,7 +31,7 @@ namespace Code.Core.Inputs
 
         private void ProcessBotInput()
         {
-            Ball ball = LevelStateHandler.LevelState.Ball;
+            Ball ball = LevelStateHandler.Instance.Ball;
             Vector2 position = ball.transform.position;
             Vector2 currentPosition = transform.position;
             Vector2 difference = position - currentPosition;

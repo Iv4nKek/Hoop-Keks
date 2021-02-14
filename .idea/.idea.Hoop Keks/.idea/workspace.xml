@@ -2,8 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebbed2e6-8421-4910-a8ac-65e9884663d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/SocialShare.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/SocialShare.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/BonusScoreUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/BonusScoreUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Sharing.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Sharing.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hoop Keks/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Ball/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Ball/Ball.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Ball/BallSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Ball/BallSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/DebugKek.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/DebugKek.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Effects/CameraShaking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Effects/CameraShaking.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Effects/SlowMotion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Effects/SlowMotion.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Core/ImagePublisher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/ImagePublisher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Inputs/BotInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Inputs/BotInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Inputs/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Inputs/PlayerInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/States/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/States/GameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/States/GameStateHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/States/GameStateHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/States/LevelStateHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/States/LevelStateHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Torus/AreaHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Torus/AreaHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Torus/GoalHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Torus/GoalHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Torus/Torus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Torus/Torus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Torus/TorusSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Torus/TorusSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Tournament/Tournament.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Tournament/Tournament.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/UI/MenuUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/MenuUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/UI/PointsUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/PointsUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/UI/ScoreUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/ScoreUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/UI/TimeUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/UI/TimeUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Eco/Skin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Eco/Skin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Eco/SkinContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Eco/SkinContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Eco/SkinShop/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Eco/SkinShop/SkinHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Eco/SkinShop/Shop.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Eco/SkinShop/SkinHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Materials/Torus.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/Materials/Torus.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/torbrowser-install-win64-10.0.11_ru.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/torbrowser-install-win64-10.0.11_ru.exe.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SkinContainer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SkinContainer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gameState.dat" beforeDir="false" afterPath="$PROJECT_DIR$/gameState.dat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +58,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29AD182F-AA3F-478C-9310-D6A2E7143C15/a2/e3cd6f40/Texture.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Core/NativeShare.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Core/Inputs/PlayerInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Core/Primitives.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -22,48 +66,53 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Code/Core/Inputs/Input.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Ball.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Eco/Skin.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Eco/SkinShop/Shop.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/PlayerResources.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/GameStateHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Eco/SkinContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/TorusPhysics.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Inputs/JumpInput.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Thorus.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/Inputs/PlayerInput.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/GameState.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/LevelState.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Torus.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/GoalHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseContainer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/DebugKek.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/CameraShaking.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/LevelStateHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/States/GameState.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/UI/TournamentUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/Tournament/Tournament.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/UI/MenuUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/SceneLoader.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/Ball/Ball.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Torus/AreaHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Torus/GoalHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/BallSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Inputs/BotInput.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/UI/ScoreUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/UI/TimeUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Ball/BallSpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/States/GameStateHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/UI/TapToStart.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/States/LevelStateHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/Torus/TorusSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/SlowMotion.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/Torus/Torus.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/UI/PointsUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Core/Primitives.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/WallColliderCreator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/NativeShare.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Core/ImagePublisher.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Inputs/PlayerInput.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Sharing.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/SocialShare.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/SlowMotion.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/States/GameState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/States/GameStateHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Eco/Skin.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Ball/Ball.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Primitives.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Eco/SkinContainer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Eco/SkinShop/SkinHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Torus/Torus.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/UI/ScoreUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Torus/TorusSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/UI/MenuUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/UI/TimeUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/CameraShaking.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/States/LevelStateHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Tournament/Tournament.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/DebugKek.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/UI/BonusScoreUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseContainer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Core/Effects/PhraseHandler.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oICPZfTZ5wd0MJsVQWDL2WSebG" />
@@ -81,7 +130,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.build.unityPlugin" />
   </component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
     <configuration name="Code.Core.Effects.PhraseHandler.Main" type="DotNetStaticMethod" factoryName=".NET Static Method" temporary="true">
       <option name="EXE_PATH" value="C:\Program Files\JetBrains\JetBrains Rider 2020.3\lib\ReSharperHost\JetLauncherILc.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -93,6 +142,22 @@
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/Assembly-CSharp.csproj" />
       <option name="PROJECT_TFM" value=".NETFramework,Version=v4.7.1" />
       <option name="CLASS_NAME" value="Code.Core.Effects.PhraseHandler" />
+      <option name="METHOD_NAME" value="Main" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Code.Core.ImagePublisher.Main" type="DotNetStaticMethod" factoryName=".NET Static Method" temporary="true">
+      <option name="EXE_PATH" value="C:\Program Files\JetBrains\JetBrains Rider 2020.3\lib\ReSharperHost\JetLauncherILc.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Assembly-CSharp.csproj" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.7.1" />
+      <option name="CLASS_NAME" value="Code.Core.ImagePublisher" />
       <option name="METHOD_NAME" value="Main" />
       <method v="2">
         <option name="Build" />
@@ -118,6 +183,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue=".NET Static Method.Code.Core.ImagePublisher.Main" />
         <item itemvalue=".NET Static Method.Code.Core.Effects.PhraseHandler.Main" />
       </list>
     </recent_temporary>
@@ -134,7 +200,7 @@
       <workItem from="1613052358134" duration="1536000" />
       <workItem from="1613055300558" duration="24419000" />
       <workItem from="1613139266730" duration="30913000" />
-      <workItem from="1613220199545" duration="2293000" />
+      <workItem from="1613220199545" duration="34774000" />
     </task>
     <task id="LOCAL-00001" summary="Core done">
       <created>1613224059819</created>
@@ -143,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613224059819</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Core done fix">
+      <created>1613224612969</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613224612969</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -163,7 +236,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Core done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Core done" />
+    <MESSAGE value="Core done fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Core done fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

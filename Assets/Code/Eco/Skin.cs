@@ -8,13 +8,13 @@ namespace Code.Eco
         [SerializeField] private String _name;
         [SerializeField] private int _money;
         [SerializeField] private Sprite _icon;
-        [SerializeField] private Texture _texture;
+        [SerializeField] private Material _material;
 
         public int Money => _money;
 
         public Sprite Icon => _icon;
 
-        public Texture Texture => _texture;
+        public Material Material => _material;
 
         public string Name => _name;
     }

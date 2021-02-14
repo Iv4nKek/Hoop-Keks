@@ -6,16 +6,37 @@ namespace Code.Core.Inputs
 {
     public class PlayerInput: JumpInput
     {
+        [SerializeField]private bool _isMobile;
         private void Update()
         {
-            if (Input.GetMouseButtonDown(0))
+            if (_isMobile)
             {
-                LeftJump();
+                if (Input.GetMouseButtonDown(0))
+                {
+                    if (Input.mousePosition.x < Screen.width / 2f)
+                    {
+                        LeftJump();
+                    }
+                    else
+                    {
+                        RightJump();
+                    }
+                    
+                   
+                }
             }
-            if (Input.GetMouseButtonDown(1))
+            else
             {
-                RightJump();
+                if (Input.GetMouseButtonDown(0))
+                {
+                    LeftJump();
+                }
+                if (Input.GetMouseButtonDown(1))
+                {
+                    RightJump();
+                }
             }
+           
         }
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using Code.Eco;
 using UnityEngine;
 
 namespace Code.Core
@@ -8,13 +9,39 @@ namespace Code.Core
         [SerializeField] private CircleCollider2D _areaCollider;
         [SerializeField] private CircleCollider2D _goalCollider;
 
+        [SerializeField] private MeshRenderer _renderer;
+
         public CircleCollider2D AreaCollider => _areaCollider;
 
         public CircleCollider2D GoalCollider => _goalCollider;
 
+        private void Start()
+        {
+            LevelStateHandler.Instance.OnStart += UpdateSkin;
+            UpdateSkin();
+        }
+
         private void OnEnable()
         {
-            LevelStateHandler.LevelState.Ball = this;
+            LevelStateHandler.Instance.Ball = this;
         }
+
+        private void UpdateSkin()
+        {
+            Skin skin;
+            if (GameStateHandler.Instance.State.IsBonusLevel)
+            {
+                skin = SkinHandler.Instance.GetBonusSkin();
+            }
+            else
+            {
+                skin = SkinHandler.Instance.GetBallSkin();
+            }
+
+            _renderer.material = skin.Material;
+
+
+        }
+        
     }
 }

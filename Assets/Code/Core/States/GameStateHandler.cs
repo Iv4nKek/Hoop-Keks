@@ -9,20 +9,28 @@ namespace Code.Core
     public class GameStateHandler : MonoBehaviour
     {
         [SerializeField]private GameState _gameState;
+        [SerializeField] private float _bonusLevelIncome;
 
-        private static GameStateHandler _gameStateHandler;
+        private static GameStateHandler _gameInstance;
         public GameState State => _gameState;
 
-        public static GameStateHandler StateHandler => _gameStateHandler;
+        public static GameStateHandler Instance => _gameInstance;
 
         private void Awake()
         {
-            if (_gameStateHandler == null)
+            if (_gameInstance == null)
             {
-                _gameStateHandler = this;
+                _gameInstance = this;
             }
         }
-        
+        public void AddToBonusLevel()
+        {
+            _gameState.BonusValue += _bonusLevelIncome;
+            if (_gameState.BonusValue >= 1f)
+            {
+                _gameState.IsBonusLevel = true;
+            }
+        }
 
         private void Start()
         {
@@ -47,8 +55,9 @@ namespace Code.Core
 
         private void LoadGameState()
         {
-            BinaryFormatter formatter = new BinaryFormatter();
-            if (File.Exists("gameState.dat"))
+            
+            /*BinaryFormatter formatter = new BinaryFormatter();
+            if (System.IO.File.Exists("gameState.dat"))
             {
                 using (FileStream fs = new FileStream("gameState.dat", FileMode.Open))
                 {
@@ -68,7 +77,7 @@ namespace Code.Core
                 GameState gameState = new GameState();
                 _gameState = gameState;
                 SaveGameState();
-            }
+            }*/
             
         }
     }

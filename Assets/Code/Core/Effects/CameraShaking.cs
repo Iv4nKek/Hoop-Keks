@@ -10,7 +10,7 @@ namespace Code.Core.Effects
 
         private void Start()
         {
-            LevelStateHandler.LevelState.OnGoal += OnGoal;
+            LevelStateHandler.Instance.OnGoal += OnGoal;
         }
 
         private void OnGoal(Belongs belongs)
@@ -23,6 +23,7 @@ namespace Code.Core.Effects
             transform.DORewind();
             transform.DOKill();
             transform.DOShakePosition(1,new Vector3(1,1,0)*_shakePower,5);
+            Handheld.Vibrate();
         }
     }
 }

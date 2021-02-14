@@ -26,9 +26,11 @@
               <e p="JumpInput.cs" t="Include" />
               <e p="PlayerInput.cs" t="Include" />
             </e>
+            <e p="NativeShare.cs" t="Include" />
             <e p="PlayerResources.cs" t="Include" />
             <e p="Primitives.cs" t="Include" />
             <e p="SceneLoader.cs" t="Include" />
+            <e p="SocialShare.cs" t="Include" />
             <e p="States" t="Include">
               <e p="GameState.cs" t="Include" />
               <e p="GameStateHandler.cs" t="Include" />
@@ -44,6 +46,7 @@
               <e p="Tournament.cs" t="Include" />
             </e>
             <e p="UI" t="Include">
+              <e p="BonusScoreUI.cs" t="Include" />
               <e p="MenuUI.cs" t="Include" />
               <e p="PointsUI.cs" t="Include" />
               <e p="ScoreUI.cs" t="Include" />
@@ -56,9 +59,10 @@
             <e p="Skin.cs" t="Include" />
             <e p="SkinContainer.cs" t="Include" />
             <e p="SkinShop" t="Include">
-              <e p="Shop.cs" t="Include" />
+              <e p="SkinHandler.cs" t="Include" />
             </e>
           </e>
+          <e p="Sharing.cs" t="Include" />
         </e>
         <e p="Demigiant" t="Include">
           <e p="DemiLib" t="Include">
@@ -121,6 +125,24 @@
             <e p="EZ_PrefabPoolOption.cs" t="Include" />
           </e>
         </e>
+        <e p="Plugins" t="Include">
+          <e p="NativeShare" t="Include">
+            <e p="Android" t="Include">
+              <e p="NSCallbackHelper.cs" t="Include" />
+              <e p="NSShareResultCallbackAndroid.cs" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="NativeShare.Editor.asmdef" t="Include" />
+              <e p="NSPostProcessBuild.cs" t="Include" />
+            </e>
+            <e p="iOS" t="Include">
+              <e p="NSShareResultCallbackiOS.cs" t="Include" />
+            </e>
+            <e p="NativeShare.cs" t="Include" />
+            <e p="NativeShare.Runtime.asmdef" t="Include" />
+            <e p="readme.txt" t="Include" />
+          </e>
+        </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />
@@ -154,6 +176,8 @@
         </e>
       </e>
       <e p="Hoop Keks.sln" t="IncludeFlat" />
+      <e p="NativeShare.Editor.csproj" t="IncludeRecursive" />
+      <e p="NativeShare.Runtime.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />

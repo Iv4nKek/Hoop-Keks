@@ -14,30 +14,29 @@ namespace Code.Core.UI
         
         [SerializeField] private TMP_Text _playerScore;
         [SerializeField] private TMP_Text _botScore;
+        [SerializeField] private Transform _score;
         
 
         private LevelStateHandler _levelStateHandler;
-        private Tween _tween;
 
         private void Start()
         {
-            _levelStateHandler = LevelStateHandler.LevelState;
+            _levelStateHandler = LevelStateHandler.Instance;
             _levelStateHandler.OnGoal += HandleGoal;
             _levelStateHandler.OnReset += UpdateText;
+            _levelStateHandler.OnStart += OnStart;
             _playerScore.color = _defaulColor;
             _botScore.color = _defaulColor;
 
-            SetupTween();
         }
 
-        
-        private void SetupTween()
+        private void OnStart()
         {
-            _tween = _playerScore.rectTransform.DOSizeDelta(_playerScore.rectTransform.sizeDelta*1.5f,duration);
-            _tween.SetLoops(2, LoopType.Yoyo);
-            _tween.SetAutoKill(false);
-            _tween.Pause();
+            _score.gameObject.SetActive(!_levelStateHandler.IsBonusLevel);
+
         }
+        
+     
         private void HandleGoal(Belongs belongs)
         {
             UpdateText();

@@ -12,8 +12,8 @@ namespace Code.Core
 
         private void Start()
         {
-            LevelStateHandler.LevelState.OnStart += Spawn;
-            LevelStateHandler.LevelState.OnReset += Despawn;
+            LevelStateHandler.Instance.OnStart += Spawn;
+            LevelStateHandler.Instance.OnReset += Despawn;
         }
 
         private void Despawn()
@@ -24,9 +24,15 @@ namespace Code.Core
         private void Spawn()
         {
             _playerTorus.position = _playerSpawnPosition.position;
-            _botTorus.position = _botSpawnPosition.position;
             _playerTorus.gameObject.SetActive(true);
-            _botTorus.gameObject.SetActive(true);
+            if (!LevelStateHandler.Instance.IsBonusLevel)
+            { 
+                _botTorus.position = _botSpawnPosition.position;
+            
+                _botTorus.gameObject.SetActive(true);
+            }
+                
+           
         }
     }
 }

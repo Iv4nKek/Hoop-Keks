@@ -11,7 +11,7 @@ namespace Code.Core
 
         private void Start()
         {
-            _ballGoalCollider=  LevelStateHandler.LevelState.Ball.GoalCollider;
+            _ballGoalCollider=  LevelStateHandler.Instance.Ball.GoalCollider;
         }
 
         private void OnTriggerEnter2D(Collider2D other)

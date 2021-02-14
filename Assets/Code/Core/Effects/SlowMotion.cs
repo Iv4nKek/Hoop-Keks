@@ -10,8 +10,8 @@ namespace Code.Core.Effects
         
         private void Start()
         {
-            LevelStateHandler.LevelState.OnBeforeEndMatch += OnGameEnd;
-            LevelStateHandler.LevelState.OnStart += ResumeTime;
+            LevelStateHandler.Instance.OnBeforeEndMatch += OnGameEnd;
+            LevelStateHandler.Instance.OnStart += ResumeTime;
         }
 
         private void ResumeTime()
@@ -29,7 +29,8 @@ namespace Code.Core.Effects
             while(true)
             {
                 yield return new WaitForSeconds(_slowMotionTime);
-                LevelStateHandler.LevelState.EndMatch(winner);
+                LevelStateHandler.Instance.EndMatch(winner);
+                break;
             }
         }
     }

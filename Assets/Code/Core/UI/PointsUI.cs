@@ -33,12 +33,12 @@ namespace Code.Core.UI
 
         private void OnDisable()
         {
-            LevelStateHandler.LevelState.OnGoal -= HandleGoal;
+            LevelStateHandler.Instance.OnGoal -= HandleGoal;
         }
 
         private void Start()
         {
-            _levelState = LevelStateHandler.LevelState;
+            _levelState = LevelStateHandler.Instance;
             _pointsCount = _levelState.WinScore; 
             CreatePoints(_playerPointsTransform,_playerPoints);
             CreatePoints(_botPointsTransform,_botPoints);

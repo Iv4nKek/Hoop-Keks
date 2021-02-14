@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
@@ -11,11 +12,11 @@ namespace Code.Core
         {
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                LevelStateHandler.LevelState.AddPoint(Belongs.Player);
+                LevelStateHandler.Instance.AddPoint(Belongs.Player);
             }
             if (Input.GetKeyDown(KeyCode.W))
             {
-                LevelStateHandler.LevelState.AddPoint(Belongs.Enemy);
+                LevelStateHandler.Instance.AddPoint(Belongs.Enemy);
             }
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -24,6 +25,17 @@ namespace Code.Core
             if (Input.GetKeyDown(KeyCode.R))
             {
                 Time.timeScale = 1f;
+            }
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                string filepath = Path.Combine(Application.temporaryCachePath, "screen.png");
+                ScreenCapture.CaptureScreenshot(filepath);
+
+                new NativeShare().AddFile(filepath).SetSubject("kekw").SetText("opa");
+            }
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                Time.timeScale = 0.5f;
             }
 
         }
