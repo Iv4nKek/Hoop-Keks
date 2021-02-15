@@ -7,7 +7,7 @@ namespace Code.States
 {
     public class GameStateHandler : MonoBehaviour
     {
-        [SerializeField] private string _filename = "GameData.dat";
+        [SerializeField] private string _filename = "/Data.dat";
         [SerializeField] private GameState _gameState;
         [SerializeField] private float _bonusLevelIncome;
 
@@ -41,10 +41,10 @@ namespace Code.States
             SaveGameState();
         }
 
-        private void SaveGameState()
+        public void SaveGameState()
         {
             BinaryFormatter formatter = new BinaryFormatter();
-            using (FileStream fs = new FileStream(_filename, FileMode.Create))
+            using (FileStream fs = new FileStream(Application.persistentDataPath+_filename, FileMode.Create))
             {
                 formatter.Serialize(fs, _gameState);
             }
@@ -53,9 +53,9 @@ namespace Code.States
         private void LoadGameState()
         {
             BinaryFormatter formatter = new BinaryFormatter();
-            if (System.IO.File.Exists(_filename))
+            if (System.IO.File.Exists(Application.persistentDataPath+_filename))
             {
-                using (FileStream fs = new FileStream(_filename, FileMode.Open))
+                using (FileStream fs = new FileStream(Application.persistentDataPath+_filename, FileMode.Open))
                 {
                     GameState gameState = (GameState) formatter.Deserialize(fs);
                     if (gameObject != null)

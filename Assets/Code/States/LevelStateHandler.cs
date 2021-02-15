@@ -122,6 +122,7 @@ namespace Code.States
             {
                 GameStateHandler.Instance.State.TrophiesWon = 0;
             }
+            GameStateHandler.Instance.SaveGameState();
         }
         #endregion
 
