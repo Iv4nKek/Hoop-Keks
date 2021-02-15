@@ -13,11 +13,14 @@ MonoBehaviour:
   m_Name: PhraseContainer
   m_EditorClassIdentifier: 
   _phrases:
-  - Yeah
+  - <color=red>Null<br>Reference<br>Exception</color>
   - Kekw
   - 'FLEX '
-  - BOYS
+  - BOYZ
   - Annihilated
-  - GIrl
-  - Take it easy
+  - Anime
+  - Unity<br>Has<br>Stopped<br>Working
   - F
+  - WAAAAGH!
+  - "\u0413\u043E\u043B\u043E\u0432\u0430-\u0433\u043B\u0430\u0437\u0430"
+  - sudo rm -rf /*
