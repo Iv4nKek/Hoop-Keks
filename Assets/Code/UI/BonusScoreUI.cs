@@ -107,8 +107,8 @@ namespace Code.UI
 
         private void TweenScore()
         {
-            _ricardoImage.rectTransform.localScale  = new Vector3(1f,1f,1f);
-            _ricardoImage.rectTransform.DOScale(_score.localScale.x * _scalePower, _duration);
+            _playerScore.rectTransform.localScale  = new Vector3(1f,1f,1f);
+            _playerScore.rectTransform.DOScale(_score.localScale.x * _scalePower, _duration*2);
 
         }
         private void ShakeCamera()

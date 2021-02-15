@@ -3451,7 +3451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerType: 1
   _jumpForce: 300
-  _jumpVector: {x: 0.7, y: 1}
+  _jumpVector: {x: 0.4, y: 1}
   _jumpInput: {fileID: 903055491}
   _rigidbody2D: {fileID: 903055498}
   _ballCollider: {fileID: 0}
@@ -6002,7 +6002,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Loser
+  m_text: Looser
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6435,7 +6435,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -8155,6 +8155,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 657145561}
     m_Modifications:
+    - target: {fileID: 1473083575274462528, guid: 383158a7eecefdb429ffff9bb3878794,
+        type: 3}
+      propertyPath: _jumpVector.x
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 1473083575274462539, guid: 383158a7eecefdb429ffff9bb3878794,
         type: 3}
       propertyPath: m_Name

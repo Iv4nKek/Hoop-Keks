@@ -72,7 +72,7 @@ namespace Code.Torus
         {
             _controlLocked = false;
         }
-        public void UpdateBallColliders()
+        private void UpdateBallColliders()
         {
             Ball ball = LevelStateHandler.Instance.Ball;
             Physics2D.IgnoreCollision(ball.AreaCollider, GetComponent<PolygonCollider2D>());

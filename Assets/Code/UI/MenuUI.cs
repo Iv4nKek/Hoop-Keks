@@ -1,3 +1,4 @@
+using System;
 using Code.States;
 using DG.Tweening;
 using TMPro;
@@ -35,7 +36,11 @@ namespace Code.UI
             LevelStateHandler.Instance.OnEndMatch += UpdateUI;
         }
 
-        
+        private void OnDestroy()
+        {
+            LevelStateHandler.Instance.OnEndMatch -= UpdateUI;
+        }
+
 
         private void UpdateUI(PlayerType winner)
         {

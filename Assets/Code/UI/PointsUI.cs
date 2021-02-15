@@ -28,6 +28,7 @@ namespace Code.UI
         private void OnDisable()
         {
             LevelStateHandler.Instance.OnGoal -= HandleGoal;
+            _levelState.OnStart -= ResetPoints;
         }
 
         private void Start()
