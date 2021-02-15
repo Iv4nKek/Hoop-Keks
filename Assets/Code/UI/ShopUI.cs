@@ -31,8 +31,8 @@ namespace Code.UI
 
         public void ChangeVisibility()
         {
-            _commonParent.gameObject.SetActive(_open);
             _open = !_open;
+            _commonParent.gameObject.SetActive(_open);
         }
 
         private void CreateAll()

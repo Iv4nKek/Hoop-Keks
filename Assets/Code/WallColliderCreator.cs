@@ -18,34 +18,28 @@ namespace Code
 
         private Vector3 _cameraPos;
 
-        // Use this for initialization
         private void Start()
         {
-            //Generate our empty objects
             _topCollider = new GameObject().transform;
             _bottomCollider = new GameObject().transform;
             _rightCollider = new GameObject().transform;
             _leftCollider = new GameObject().transform;
-
-            //Name our objects 
+ 
             _topCollider.name = "TopCollider";
             _bottomCollider.name = "BottomCollider";
             _rightCollider.name = "RightCollider";
             _leftCollider.name = "LeftCollider";
 
-            //Add the colliders
             _topCollider.gameObject.AddComponent<BoxCollider2D>();
             _bottomCollider.gameObject.AddComponent<BoxCollider2D>();
             _rightCollider.gameObject.AddComponent<BoxCollider2D>();
             _leftCollider.gameObject.AddComponent<BoxCollider2D>();
 
-            //Make them the child of whatever object this script is on, preferably on the Camera so the objects move with the camera without extra scripting
             _topCollider.parent = transform;
             _bottomCollider.parent = transform;
             _rightCollider.parent = transform;
             _leftCollider.parent = transform;
 
-            //Generate world space point information for position and scale calculations
             var camera = Camera.main;
             _cameraPos = Camera.main.transform.position;
             _screenSize.x = Vector2.Distance(Camera.main.ScreenToWorldPoint(new Vector3(0, 0, -10)),
@@ -53,7 +47,6 @@ namespace Code
             _screenSize.y = Vector2.Distance(Camera.main.ScreenToWorldPoint(new Vector3(0, 0, -10)),
                 Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height - _padding, -10))) * 0.5f;
 
-            //Change our scale and positions to match the edges of the screen...   
             _rightCollider.localScale = new Vector3(_colDepth, _screenSize.y * 2, _colDepth);
             _rightCollider.position = new Vector3(_cameraPos.x + _screenSize.x + _rightCollider.localScale.x * 0.5f,
                 _cameraPos.y, _zPosition);

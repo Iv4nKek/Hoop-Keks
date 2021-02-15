@@ -1,3 +1,4 @@
+using System;
 using Code.Eco;
 using Code.Eco.SkinShop;
 using Code.States;
@@ -21,6 +22,11 @@ namespace Code.CentralBall
         {
             LevelStateHandler.Instance.OnStart += UpdateSkin;
             UpdateSkin();
+        }
+
+        private void OnDestroy()
+        {
+            LevelStateHandler.Instance.OnStart -= UpdateSkin;
         }
 
         private void OnEnable()
