@@ -12,6 +12,7 @@ namespace Code.States
         [SerializeField] private float _bonusLevelIncome;
 
         private static GameStateHandler _gameInstance;
+        private string _fullPath;
 
         public GameState State => _gameState;
 
@@ -24,6 +25,7 @@ namespace Code.States
                 _gameInstance = this;
             }
 
+            _fullPath = Application.persistentDataPath + _filename;
             LoadGameState();
         }
 
@@ -44,7 +46,7 @@ namespace Code.States
         public void SaveGameState()
         {
             BinaryFormatter formatter = new BinaryFormatter();
-            using (FileStream fs = new FileStream(Application.persistentDataPath+_filename, FileMode.Create))
+            using (FileStream fs = new FileStream(_fullPath, FileMode.Create))
             {
                 formatter.Serialize(fs, _gameState);
             }
@@ -53,9 +55,9 @@ namespace Code.States
         private void LoadGameState()
         {
             BinaryFormatter formatter = new BinaryFormatter();
-            if (System.IO.File.Exists(Application.persistentDataPath+_filename))
+            if (System.IO.File.Exists(_fullPath))
             {
-                using (FileStream fs = new FileStream(Application.persistentDataPath+_filename, FileMode.Open))
+                using (FileStream fs = new FileStream(_fullPath, FileMode.Open))
                 {
                     GameState gameState = (GameState) formatter.Deserialize(fs);
                     if (gameObject != null)
