@@ -1,3 +1,3 @@
 # Hoop-Keks
-Insired by:
+Inspired by:
 https://youtu.be/X5ULmETDiXI
